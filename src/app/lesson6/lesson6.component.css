@@ -1,0 +1,26 @@
+/* Base style for anchor links */
+a {
+  color: #3498db; /* Bright blue color */
+  text-decoration: none; /* Remove the default underline */
+  font-weight: 500; /* Slightly bold */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth color and scale transition */
+  font-size: 16px; /* Slightly bigger font for better readability */
+}
+
+/* Hover effect */
+a:hover {
+  color: #e74c3c; /* Red color on hover */
+  transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+/* Active state */
+a:active {
+  color: #9b59b6; /* Purple color when clicked */
+  transform: scale(0.98); /* Slight shrink effect when clicked */
+}
+
+/* Focus state for better accessibility */
+a:focus {
+  outline: 2px solid #f39c12; /* Add golden outline when focused */
+  outline-offset: 2px; /* Ensure the outline doesn't overlap the text */
+}

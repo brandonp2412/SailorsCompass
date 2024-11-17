@@ -9,6 +9,7 @@ import { Lesson7Component } from './lesson7/lesson7.component';
 import { Lesson8Component } from './lesson8/lesson8.component';
 import { Lesson9Component } from './lesson9/lesson9.component';
 import { Lesson10Component } from './lesson10/lesson10.component';
+import { RouteExampleComponent } from './route-example/route-example.component';
 
 export const routes: Routes = [
   { path: '', component: Lesson1Component },
@@ -21,4 +22,5 @@ export const routes: Routes = [
   { path: 'lesson8', component: Lesson8Component },
   { path: 'lesson9', component: Lesson9Component },
   { path: 'lesson10', component: Lesson10Component },
+  { path: 'route-example', component: RouteExampleComponent },
 ];
