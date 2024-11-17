@@ -1,1 +1,17 @@
-<p>lesson7 works!</p>
+<h1>Services</h1>
+<p>Angular uses services to share JavaScript code between pages</p>
+
+<h2>DogService</h2>
+<button (click)="addDog()">Add dog</button>
+<br />
+<br />
+<div class="flex">
+  @for (dog of dogService.dogs; track $index) {
+  <app-card
+    title="Dog image"
+    description="This is a description of a dog"
+    [imageUrl]="dog"
+    (primaryAction)="popDog()"
+  />
+  }
+</div>
