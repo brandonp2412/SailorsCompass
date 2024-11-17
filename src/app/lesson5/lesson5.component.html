@@ -4,3 +4,14 @@
   <i>loopy</i>
   ...
 </p>
+
+<!-- Give these cards better titles and descriptions -->
+<div class="flex">
+  @for (animal of animals; track $index) {
+  <app-card
+    [imageUrl]="animal"
+    [title]="'Animal ' + $index.toString()"
+    description="This is a fluffy monster."
+  />
+  }
+</div>
