@@ -10,14 +10,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './lesson3.component.css',
 })
 export class Lesson3Component {
-  name = '';
-  showGreeting = false;
-
-  // Make sure name isn't empty before greeting the user.
-  greet() {
-    this.showGreeting = true;
-
-    // Hide the greeting after some time.
-    // HINT: https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout
-  }
+  toBe = true;
+  mrBeast = false;
 }

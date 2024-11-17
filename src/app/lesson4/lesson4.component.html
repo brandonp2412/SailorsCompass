@@ -1,0 +1,13 @@
+<h1>User input</h1>
+<p>Sometimes we want to ask the user a question</p>
+
+<input placeholder="Whats your name?" type="text" [(ngModel)]="name" />
+<br />
+<br />
+<button (click)="greet()">Greet</button>
+
+@if (showGreeting) {
+<h2>Hello {{ name }} my old friend...</h2>
+} @else {
+<!-- Write a message to show when there's nobody to greet -->
+}
