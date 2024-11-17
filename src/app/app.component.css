@@ -41,6 +41,11 @@
   transition: all 0.3s ease;
 }
 
+.navbar-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .navbar-link:hover {
   background-color: #9181f2;
   border-radius: 4px;
@@ -74,7 +79,7 @@
   background: #fff;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
   .navbar-container {
     padding: 0 30px;
   }

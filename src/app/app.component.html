@@ -1,6 +1,6 @@
 <nav class="navbar">
   <div class="navbar-container">
-    <a href="#" class="navbar-logo">CodeSail</a>
+    <a routerLink="/" class="navbar-logo">CodeSail</a>
 
     <div class="navbar-toggle" id="mobile-menu" (click)="toggleMenu()">
       <span class="bar"></span>
@@ -9,20 +9,65 @@
     </div>
 
     <ul class="navbar-menu" [class.active]="isMenuOpen">
-      <li><a href="#" class="navbar-link">Lesson 1</a></li>
-      <li><a href="#" class="navbar-link">Lesson 2</a></li>
-      <li><a href="#" class="navbar-link">Lesson 3</a></li>
-      <li><a href="#" class="navbar-link">Lesson 4</a></li>
-      <li><a href="#" class="navbar-link">Lesson 5</a></li>
-      <li><a href="#" class="navbar-link">Lesson 6</a></li>
-      <li><a href="#" class="navbar-link">Lesson 7</a></li>
-      <li><a href="#" class="navbar-link">Lesson 8</a></li>
-      <li><a href="#" class="navbar-link">Lesson 9</a></li>
-      <li><a href="#" class="navbar-link">Lesson 10</a></li>
+      <li>
+        <a
+          class="navbar-link"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson2" routerLinkActive="active">
+          2
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson3" routerLinkActive="active">
+          3
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson4" routerLinkActive="active">
+          4
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson5" routerLinkActive="active">
+          5
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson6" routerLinkActive="active">
+          6
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson7" routerLinkActive="active">
+          7
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson8" routerLinkActive="active">
+          8
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson9" routerLinkActive="active">
+          9
+        </a>
+      </li>
+      <li>
+        <a class="navbar-link" routerLink="lesson10" routerLinkActive="active">
+          10
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <main>
-  <router-outlet />
+  <router-outlet></router-outlet>
 </main>

@@ -1,0 +1,20 @@
+<div class="card">
+  <!-- Image -->
+  <img [src]="imageUrl" alt="Card image" class="card-image" />
+
+  <!-- Content -->
+  <div class="card-content">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-description">{{ description }}</p>
+  </div>
+
+  <!-- Footer Buttons -->
+  <div class="card-footer">
+    <button class="card-button primary" (click)="onPrimaryClick()">
+      Primary
+    </button>
+    <button class="card-button secondary" (click)="onSecondaryClick()">
+      Secondary
+    </button>
+  </div>
+</div>
