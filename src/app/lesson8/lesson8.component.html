@@ -1,1 +1,20 @@
-<p>lesson8 works!</p>
+<h1>HTTP Requests</h1>
+<p>
+  Angular uses the
+  <a href="https://angular.dev/guide/http" target="_blank">http client</a>
+  to make requests
+</p>
+
+<button (click)="getPosts()">Get posts</button>
+<br />
+<br />
+
+<!-- Use jsonplaceholder for photos instead -->
+<!-- https://jsonplaceholder.typicode.com/photos -->
+<div class="flex">
+  @if (loading) {
+  <div class="spinner"></div>
+  } @for (post of posts; track $index) {
+  <app-card [description]="post.body" [title]="post.title" />
+  }
+</div>

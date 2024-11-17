@@ -105,3 +105,24 @@ button:disabled {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+/* Spinner styles */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent; /* Transparent border */
+  border-top: 5px solid #3498db; /* Blue color */
+  border-right: 5px solid #f39c12; /* Orange color */
+  border-radius: 50%; /* Makes it a circle */
+  animation: spin 1s linear infinite; /* Smooth spinning */
+}
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start position */
+  }
+  100% {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}
