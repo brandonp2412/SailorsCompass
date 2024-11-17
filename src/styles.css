@@ -13,3 +13,89 @@ ul {
 main {
   padding-left: 1rem;
 }
+
+/* Basic reset for input */
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Focus effect */
+input:focus {
+  border-color: #6c5ce7; /* Purple border on focus */
+  box-shadow: 0 0 10px rgba(108, 92, 231, 0.3);
+  background-color: #fff;
+}
+
+/* Hover effect */
+input:hover {
+  border-color: #b3b3b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* When the input is focused, remove the placeholder */
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* Stylish Button */
+button {
+  background-color: #6c5ce7; /* Purple background */
+  color: #fff;
+  border: 2px solid #6c5ce7;
+  border-radius: 50px; /* Rounded edges */
+  padding: 12px 24px; /* Adequate padding */
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Capitalize the text */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #fff;
+  color: #6c5ce7; /* Change text color to match border */
+  border-color: #6c5ce7;
+  transform: translateY(-3px); /* Lift the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+/* Active/Clicked effect */
+button:active {
+  transform: translateY(1px); /* Slightly press the button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+/* Focus effect */
+button:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2); /* Focus glow */
+}
+
+/* Disabled button (optional) */
+button:disabled {
+  background-color: #ddd;
+  color: #999;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
